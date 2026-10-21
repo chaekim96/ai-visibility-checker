@@ -1,0 +1,12 @@
+# AI Visibility Checker
+
+> A free web tool that checks how well search engines and AI assistants can find, read and cite a single web page. Built by Chae Kim.
+
+It reads the page the way a crawler that doesn't run JavaScript would, then checks: whether the page may be indexed, which search and AI crawlers robots.txt allows, the sitemap, llms.txt, whether the text is in the HTML, the title and main heading, JSON-LD structured data, the canonical URL, the meta description, and Open Graph link previews. Each check passes, needs improving, or needs fixing, with a score and the three fixes worth the most.
+
+## Links
+
+- [The checker](https://ai-visibility-checker.vercel.app/): paste a URL, or open /?url=example.com
+- [Source code](https://github.com/chaekim96/ai-visibility-checker)
+- [Case study](https://chaekim.vercel.app/projects/ai-visibility-checker)
+- [Chae Kim](https://chaekim.vercel.app/)

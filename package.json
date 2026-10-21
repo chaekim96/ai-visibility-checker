@@ -1,0 +1,12 @@
+{
+  "name": "ai-visibility-checker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Checks how well search engines and AI assistants can find, read and cite a web page.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node dev.mjs",
+    "test": "node --test test/*.test.js"
+  }
+}

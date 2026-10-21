@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Visibility Checker · Can AI find, read and cite your page?</title>
+  <meta name="description" content="Paste a URL and see how well search engines and AI assistants can find, read and cite the page: crawler rules, llms.txt, sitemap, structured data, link previews and more.">
+  <meta property="og:title" content="AI Visibility Checker">
+  <meta property="og:description" content="Can AI find, read and cite your page? A free check of the signals that decide it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ai-visibility-checker.vercel.app/">
+  <meta property="og:image" content="https://ai-visibility-checker.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://ai-visibility-checker.vercel.app/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f3f0ff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14121f" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Visibility Checker",
+    "url": "https://ai-visibility-checker.vercel.app/",
+    "description": "Checks how well search engines and AI assistants can find, read and cite a web page.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "creator": { "@type": "Person", "name": "Chae Kim", "url": "https://chaekim.vercel.app/" }
+  }
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <p class="eyebrow"><i aria-hidden="true"></i>AI Visibility Checker</p>
+      <h1>Can AI find, read and cite your page?</h1>
+      <p class="lede">Paste a URL. The checker reads the page the way crawlers do, without running JavaScript, and checks the signals that decide whether search engines and AI assistants can use it.</p>
+      <form class="form" id="form" autocomplete="off">
+        <label class="visually-hidden" for="url">Page URL</label>
+        <input id="url" name="url" type="text" inputmode="url" placeholder="example.com/page" spellcheck="false" required>
+        <button type="submit" id="go">Check</button>
+      </form>
+      <p class="try">Try <button type="button" data-try="chaekim.vercel.app">chaekim.vercel.app</button> <button type="button" data-try="webanatomy.vercel.app">webanatomy.vercel.app</button></p>
+    </header>
+
+    <section id="status" class="status" aria-live="polite"></section>
+    <section id="report" class="report" hidden></section>
+
+    <section class="about">
+      <h2>What it checks</h2>
+      <div class="about__grid">
+        <div><b>Can AI find it?</b><p>Whether the page may be indexed, which search and AI crawlers robots.txt lets in, the sitemap, and llms.txt.</p></div>
+        <div><b>Can AI read it?</b><p>Whether the words are in the HTML before any script runs, plus the title and the main heading.</p></div>
+        <div><b>Can AI understand and cite it?</b><p>Structured data (JSON-LD), the canonical URL, the description, and the link preview.</p></div>
+      </div>
+      <p class="fine">A score is a checklist, not a promise: no tool can guarantee a ranking or a citation. The checker fetches public pages only and keeps nothing.</p>
+    </section>
+  </main>
+  <footer class="foot wrap">
+    <span>Built by <a href="https://chaekim.vercel.app/">Chae Kim</a></span>
+    <a href="https://github.com/chaekim96/ai-visibility-checker">Source on GitHub</a>
+  </footer>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
