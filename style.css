@@ -88,6 +88,8 @@ td .rule { margin-top: 3px; font-family: ui-monospace, Menlo, monospace; }
 .about__grid div { padding: 16px; border-radius: 16px; background: var(--card); box-shadow: inset 0 0 0 1px var(--line); }
 .about__grid b { font-weight: 500; }
 .about__grid p { margin-top: 6px; font-size: 14px; color: var(--ink-2); }
+.about__h { margin-top: 26px; font-size: 17px; font-weight: 500; }
+.about__p { margin-top: 8px; max-width: 70ch; font-size: 14.5px; color: var(--ink-2); }
 .fine { margin-top: 16px; font-size: 13px; color: var(--ink-2); }
 .foot { display: flex; justify-content: space-between; gap: 12px; padding: 20px 0 36px; font-size: 13.5px; color: var(--ink-2); border-top: 1px solid var(--line); }
 @media (max-width: 700px) {
