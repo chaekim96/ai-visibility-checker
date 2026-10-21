@@ -2,7 +2,7 @@
 
 **Can AI find, read and cite your page?** Paste a URL and get a report on the signals that decide whether search engines and AI assistants (ChatGPT, Claude, Perplexity, Google's AI Overviews) can use it.
 
-Live: https://ai-visibility-checker.vercel.app · Built by [Chae Kim](https://chaekim.vercel.app)
+Live: https://chaekim-ai-visibility.vercel.app · Built by [Chae Kim](https://chaekim.vercel.app)
 
 ![The report for chaekim.vercel.app](og.png)
 

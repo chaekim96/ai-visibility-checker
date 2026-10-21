@@ -6,7 +6,7 @@ It reads the page the way a crawler that doesn't run JavaScript would, then chec
 
 ## Links
 
-- [The checker](https://ai-visibility-checker.vercel.app/): paste a URL, or open /?url=example.com
+- [The checker](https://chaekim-ai-visibility.vercel.app/): paste a URL, or open /?url=example.com
 - [Source code](https://github.com/chaekim96/ai-visibility-checker)
 - [Case study](https://chaekim.vercel.app/projects/ai-visibility-checker)
 - [Chae Kim](https://chaekim.vercel.app/)

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://ai-visibility-checker.vercel.app/sitemap.xml
+Sitemap: https://chaekim-ai-visibility.vercel.app/sitemap.xml
