@@ -93,3 +93,16 @@ test("fixFirst ranks by points lost", () => {
   ];
   assert.deepEqual(fixFirst(checks).map((f) => f.id), ["c", "b", "a"]);
 });
+
+test("readPage: alt text, heading order and mixed content (Lucent playbook checks)", () => {
+  const html = `<html><head><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.example.com/a.css"></head>
+    <body><h1>A</h1><h3>skipped</h3><h2>B</h2>
+    <img src="/a.png" alt="A chart"><img src="/b.png" alt=""><img src="http://x.com/c.png"></body></html>`;
+  const d = readPage(html);
+  assert.equal(d.meta.viewport, "width=device-width, initial-scale=1");
+  assert.equal(d.imageCount, 3);
+  assert.equal(d.imagesMissingAlt, 1); // alt="" counts as a deliberate choice
+  assert.deepEqual(d.headingLevels, [1, 3, 2]);
+  assert.deepEqual(d.insecure.sort(), ["http://cdn.example.com/a.css", "http://x.com/c.png"]);
+});

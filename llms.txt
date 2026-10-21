@@ -1,8 +1,8 @@
 # AI Visibility Checker
 
-> A free web tool that checks how well search engines and AI assistants can find, read and cite a single web page. Built by Chae Kim.
+> A free web tool that checks how well search engines and AI assistants can find, read and cite a single web page. Built by Chae Kim, with Chris Jackson, Chae's co-founder at Lucent; several checks come from the audit playbook they built at Lucent.
 
-It reads the page the way a crawler that doesn't run JavaScript would, then checks: whether the page may be indexed, which search and AI crawlers robots.txt allows, the sitemap, llms.txt, whether the text is in the HTML, the title and main heading, JSON-LD structured data, the canonical URL, the meta description, and Open Graph link previews. Each check passes, needs improving, or needs fixing, with a score and the three fixes worth the most.
+It reads the page the way a crawler that doesn't run JavaScript would, then checks: whether the page may be indexed, which search and AI crawlers robots.txt allows, HTTPS and redirect chains, the sitemap, llms.txt, image alt text, heading order, the mobile viewport, mixed content, whether the text is in the HTML, the title and main heading, JSON-LD structured data, the canonical URL, the meta description, and Open Graph link previews. Each check passes, needs improving, or needs fixing, with a score and the three fixes worth the most.
 
 ## Links
 

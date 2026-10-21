@@ -29,7 +29,8 @@
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "creator": { "@type": "Person", "name": "Chae Kim", "url": "https://chaekim.vercel.app/" }
+    "creator": { "@type": "Person", "name": "Chae Kim", "url": "https://chaekim.vercel.app/" },
+    "contributor": { "@type": "Person", "name": "Chris Jackson", "jobTitle": "Co-founder, Lucent" }
   }
   </script>
 </head>
@@ -53,8 +54,8 @@
     <section class="about">
       <h2>What it checks</h2>
       <div class="about__grid">
-        <div><b>Can AI find it?</b><p>Whether the page may be indexed, which search and AI crawlers robots.txt lets in, the sitemap, and llms.txt.</p></div>
-        <div><b>Can AI read it?</b><p>Whether the words are in the HTML before any script runs, plus the title and the main heading.</p></div>
+        <div><b>Can AI find it?</b><p>Whether the page may be indexed, which search and AI crawlers robots.txt lets in, HTTPS and redirects, the sitemap, and llms.txt.</p></div>
+        <div><b>Can AI read it?</b><p>Whether the words are in the HTML before any script runs, the title and headings, image alt text, the mobile viewport, and mixed content.</p></div>
         <div><b>Can AI understand and cite it?</b><p>Structured data (JSON-LD), the canonical URL, the description, and the link preview.</p></div>
       </div>
       <h2 class="about__h">How the score works</h2>
@@ -63,7 +64,7 @@
     </section>
   </main>
   <footer class="foot wrap">
-    <span>Built by <a href="https://chaekim.vercel.app/">Chae Kim</a></span>
+    <span>Built by <a href="https://chaekim.vercel.app/">Chae Kim</a>, with Chris Jackson, my Lucent co-founder. Checks draw on the audit playbook we built at Lucent.</span>
     <a href="https://github.com/chaekim96/ai-visibility-checker">Source on GitHub</a>
   </footer>
   <script src="/app.js" type="module"></script>
